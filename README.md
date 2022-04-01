@@ -1,6 +1,6 @@
 # Deploy a React app to Kubernetes using Docker  
 
-[Source (LogRocker)](https://blog.logrocket.com/deploy-react-app-kubernetes-using-docker/)  
+[Source (LogRocket)](https://blog.logrocket.com/deploy-react-app-kubernetes-using-docker/)  
 
 ```
 mkdir react-docker-kubernetes
@@ -8,7 +8,8 @@ cd react-docker-kubernetes
 mkdir K8s 
 npx create-react-app react-docker
 npm run build
-# create Dockfile in app folder root
+
+# create Dockerfile in app folder root
 docker build -t your_docker_username/react-docker .
 docker run -d -p 3000:80 your_docker_username/react-docker
 docker stop $(docker ps -a -q)
